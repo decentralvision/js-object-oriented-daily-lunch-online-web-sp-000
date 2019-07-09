@@ -45,7 +45,10 @@ const Meal = (() => {
     }
 
     static byPrice() {
-      return store.meals.sort((a, b) => a.price - b.price);
+      return store.meals.slice().sort(function(a, b) {
+      return b.price - a.price;
+    })
+
     }
   };
 })();
