@@ -229,8 +229,9 @@ describe('index.js', () => {
       upperEast = new Neighborhood('Upper East Side');
       bigSpender = new Customer('DJ MoneyBags', upperEast.id);
       turducken = new Meal('turducken', 750);
-      fancyPizza = new Meal('fancy pizza', 600);
+
       lobster = new Meal('lobster', 500);
+      fancyPizza = new Meal('fancy pizza', 600);
       deliveryOne = new Delivery(lobster.id, upperEast.id, bigSpender.id);
       deliveryTwo = new Delivery(turducken.id, upperEast.id, bigSpender.id);
       deliveryThree = new Delivery(fancyPizza.id, upperEast.id, bigSpender.id);
