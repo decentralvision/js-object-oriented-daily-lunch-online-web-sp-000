@@ -45,7 +45,7 @@ const Meal = (() => {
     }
 
     static byPrice() {
-      return store.meals.slice().sort(function(a, b) {
+      return store.meals.sort(function(a, b) {
       return b.price - a.price;
     })
 
